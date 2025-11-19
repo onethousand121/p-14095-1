@@ -9,14 +9,12 @@ public class MainController {
     @GetMapping("/")
     @ResponseBody
     public String index() {
-        System.out.println("index() 메서드 호출됨!");
         return "메롱";
     }
 
     @GetMapping("/hello")
     @ResponseBody
     public String hello() {
-        System.out.println("hello() 메서드 호출됨!");
         return "헬로";
     }
 }
