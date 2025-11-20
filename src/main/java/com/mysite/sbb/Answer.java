@@ -1,16 +1,19 @@
 package com.mysite.sbb;
 
 import jakarta.persistence.*;
-import org.springframework.cglib.core.Local;
+import lombok.Getter;
+import lombok.Setter;
 
 import java.time.LocalDateTime;
 
+import static jakarta.persistence.GenerationType.IDENTITY;
+
 @Entity
-
+@Getter
+@Setter
 public class Answer {
-
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = IDENTITY)
     private int id;
 
     private LocalDateTime createDate;
@@ -20,5 +23,4 @@ public class Answer {
 
     @Column(columnDefinition = "TEXT")
     private String content;
-
 }
