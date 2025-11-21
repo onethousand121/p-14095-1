@@ -1,9 +1,10 @@
-package com.mysite.sbb;
+package com.mysite.sbb.question;
 
+import com.mysite.sbb.answer.Answer;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
-import static jakarta.persistence.FetchType.EAGER;
+
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
